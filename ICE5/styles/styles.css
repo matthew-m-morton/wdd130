@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    display: grid;
+}
+
+.background{
+    width: 100%;
+}
+
+main{
+    background-color: gray;
+
+}
+
+.picture{
+    border-radius: 50%;
+    border: 25px solid darkgrey ;
+}
+
+.images{
+    display:flex;
+    justify-content: space-around;
+}
