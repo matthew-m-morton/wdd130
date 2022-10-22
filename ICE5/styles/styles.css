@@ -17,7 +17,7 @@ main{
     border: 25px solid darkgrey ;
 }
 
-.images{
+.imagebox{
     display:flex;
     justify-content: space-around;
 }
