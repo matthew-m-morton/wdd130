@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Mukta:ital,wght@0,400;0,700;1,400&display=swap');
 
+/* * {
+    border: 1px solid black;
+} */
 
 #content{
     max-width: 1600px;
@@ -229,6 +232,59 @@ footer .social img{
     box-shadow: 5px 5px 10px #6f7364;
 }
 
+/* css for the rivers page */
+
+.rivers-main{
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: max-content;
+}
+
+.page-description{
+    grid-column: 3/19;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+.idaho-river-title, .utah-river-title, .arizona-river-title{
+    color: whitesmoke;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    z-index: 1;
+}
+
+.idaho-river-title span, .utah-river-title span, .arizona-river-title span {
+    background-color: #0d33ff;
+    padding-left: 10px;    
+    padding-right: 10px; 
+}
+
+.idaho-river-pic, .utah-river-pic, .arizona-river-pic{
+    display: block;
+    width: 95%;
+    margin: auto;
+    margin-top: 25px;
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.idaho-river, .utah-river, .arizona-river{
+    grid-column: 3/19;
+}
+.title-placement{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.idaho-river p, .utah-river p, .arizona-river p{
+    background-color: #0cdce8;
+    margin: 0;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*media query*/
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
